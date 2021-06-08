@@ -102,7 +102,7 @@ class _MapScreenState extends State<MapScreen> {
                   myLocationButtonEnabled: false,
                   zoomControlsEnabled: false,
                   initialCameraPosition:
-                      CameraPosition(target: currentPostion, zoom: 15),
+                      CameraPosition(target: currentPostion, zoom: 13),
                   onMapCreated: (controller) =>
                       _googleMapController = controller,
                   markers: {
@@ -202,7 +202,6 @@ class _MapScreenState extends State<MapScreen> {
   // }
 
   void _loadDirection(LatLng origin, LatLng destination) async {
-    print("blaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
     print(destination);
     setState(() {
       _origin = Marker(
@@ -216,7 +215,6 @@ class _MapScreenState extends State<MapScreen> {
 
       _info = null;
     });
-    print("boooooooooooooooooooooooooooooooo");
 
     setState(() {
       _destination = Marker(

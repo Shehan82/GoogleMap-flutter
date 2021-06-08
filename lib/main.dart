@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import 'package:map_on_flutter/MapScreen.dart';
 import 'package:map_on_flutter/homeScreen.dart';
 
 void main() {
